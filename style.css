@@ -12,18 +12,6 @@
 }
 .btn:hover {
   background-color: orange;
-  -webkit-animation: bounce .5s infinite alternate;
-  -moz-animation: bounce .5s infinite alternate;
-  animation: bounce .5s infinite alternate;
-}
-@-webkit-keyframes bounce {
-  to { -webkit-transform: scale(1.2); }
-}
-@-moz-keyframes bounce {
-  to { -moz-transform: scale(1.2); }
-}
-@keyframes bounce {
-  to { transform: scale(1.2); }
 }
 /*nav style*/
 nav {
@@ -39,8 +27,8 @@ nav {
  box-shadow: 0 4px 8px 0 rgba(9, 124, 32, 0.2), 0 6px 20px 0 rgba(94, 221, 44, 0.19);
 }
 .name {
-  padding-top; 15px;
-  padding-leftt: 6px;
+  padding-top: 15px;
+  padding-left: 6px;
   margin-top: 5px;
   margin-left: 5px;
   margin-bottom: 0px;
