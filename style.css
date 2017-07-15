@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Aladin|Bungee+Shade|Cairo|Coda|Courgette|Fruktur|Mogra|Oleo+Script|Orbitron|Shrikhand|Spectral:400,600i|Yanone+Kaffeesatz');
+
 /* global styling */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -12,6 +12,18 @@
 }
 .btn:hover {
   background-color: orange;
+  -webkit-animation: bounce .5s infinite alternate;
+  -moz-animation: bounce .5s infinite alternate;
+  animation: bounce .5s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to { transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
 }
 /*nav style*/
 nav {
@@ -19,7 +31,6 @@ nav {
   border-top: 5px orange solid;
   display: block;
   position: fixed;
-    width: 100%;
   width: 100%;
   font-family: 'orbitron', sans-serif;
   font-size: 18px;
@@ -27,11 +38,7 @@ nav {
  box-shadow: 0 4px 8px 0 rgba(9, 124, 32, 0.2), 0 6px 20px 0 rgba(94, 221, 44, 0.19);
 }
 .name {
-  padding-top: 15px;
-  padding-left: 6px;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-bottom: 0px;
+  margin: 5px 0 0 5px;
   float: left;
   width: 40%;
   font-family: 'Bungee Shade', cursive;
@@ -46,14 +53,10 @@ ul {
 }
 li {
   display: inline;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
   border: 2px #5edd2c solid;
   border-radius: 5%;
   cursor: hand;
-
 }
 li:hover {
   background-color: #5edd2c;
@@ -85,9 +88,7 @@ blockquote {
 .bio {
   font-size: 34px;
   font-family: 'cairo', sans-serif;
-  padding-top: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 100px 10px 0 10px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -114,7 +115,7 @@ blockquote {
 .me:hover {
   -ms-transform: scale(1.13,1.13);
   -webkit-transform: scale(1.13,1.13);
-  transform: scale(1.13,1.13);
+  transform: scale(1.13,1.13); 
 }
 img {
   border-bottom: 4px orange solid;
@@ -123,73 +124,53 @@ img {
 }
 .web {
   padding-top: 50px;
-    padding-bottom: 50px;
+  padding-bottom: 50px;
   border-bottom: 4px orange solid;
 }
-
-#excl {
+.excl {
   color: red;
   font-size: 80px;
 }
-#ess {
+.ess {
   color: blue;
   font-size: 70px;
 }
-#aych {
+.aych {
   color: green;
   font-size: 40px;
 }
-#eeh {
+.eeh {
   color: brown;
   font-size: 30px;
 }
-#coffee {
+.coffee {
   font-family: 'oleo script', cursive;
 }
 /* end of bio styling */
-#skills {
+.skills {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .num {
-
   font-family: 'fruktur', cursive;
 }
-#box1 {
+.box {
   box-shadow: 0 4px 8px 0 rgba(94, 221, 44, 0.2), 0 6px 20px 0 rgba(9, 124, 32, 0.19);
-  margin: 10px;
+  margin: 5px;
   border: 1px orange solid;
   transition: width 2s, height 2s, transform 2s;
 }
-#box1:hover {
+.box:hover {
   -ms-transform: scale(1.13,1.13);
   -webkit-transform: scale(1.13,1.13);
   transform: scale(1.13,1.13);
   z-index: 4;
   background-color: #5edd2c;
 }
-#box2 {
-  box-shadow: 0 4px 8px 0 rgba(94, 221, 44, 0.2), 0 6px 20px 0 rgba(9, 124, 32, 0.19);
-  border: 1px orange solid;
-  transition: width 2s, height 2s, transform 2s;
-}
-#box2:hover {
+.box2:hover {
   -ms-transform: scale(1.15,1.15);
   -webkit-transform: scale(1.15,1.15);
-  transform: scale1(1.15,1.15);
-  z-index: 4;
-  background-color: #5edd2c;
-}
-#box3 {
-  box-shadow: 0 4px 8px 0 rgba(94, 221, 44, 0.2), 0 6px 20px 0 rgba(9, 124, 32, 0.19);
-  margin: 10px;
-  border: 1px orange solid;
-  transition: width 2s, height 2s, transform 2s;
-}
-#box3:hover {
-  -ms-transform: scale(1.13,1.13);
-  -webkit-transform: scale(1.13,1.13);
-  transform: scale(1.13,1.13);
+  transform: scale(1.15,1.15);
   z-index: 4;
   background-color: #5edd2c;
 }
